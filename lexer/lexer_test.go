@@ -24,7 +24,7 @@ func TestNextToken(t *testing.T) {
 
 	l := New(input)
 
-	for i,tt in := range tests {
+	for i , tt in := range tests {
 		tok:=l.NextToken()
 
 		if tok.Type!=tt.expectedType{
