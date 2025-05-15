@@ -1,4 +1,6 @@
 
+# The Golang Intepreater
+
 The book is divided into  3 parts. They are Lexical Analysis ,Parsing and Evaluation. There's 4'th extra part dedicated on how to apply optimization technique to make the interpreter faster .
 Briefly describing each sections of the program. Any additions to the parts below is greatly entertained and encouraged.
 
@@ -10,4 +12,12 @@ This part of the code focuses on breaking down the raw string into chucks and ca
 
 ### Key things in Lexical Analysis
 #### 1) The Lexer structure 
-The structure is built around four main components . Let's give them names for us to understand it better. They are input<string> , position<int>, readPosition<int> and ch<byte>. Each of them are important and plays important roles to analyze the code as it was intended. the input field is literally a line of code. To me more concrete , it's the string starting from one statement breaker to the another. Another is position which is the index of the next character from the character being analyzed. This is important in some aspects as some of the functionality requires it . Common example is the double equal sign "==" which is the equality operator rather than the assignment operator. Some languages even analyzes two more characters from the one currently being analyzed (JavaScript for example) .Next is the readPosition which is the index of the character being read at the moment. Finally ch is the current character being read. 
+The structure is built around four main components . Let's give them names for us to understand it better. They are input<string> , position<int>, readPosition<int> and ch<byte>. 
+
+a) The string is sum of characters between two line breakers. Semicolon in some cases and "\n" in some.
+
+b)position is the index of string being analyzed
+
+c) Position+1
+
+d) ch is the character being analyzed
