@@ -43,8 +43,9 @@ const (
 	ELSE     = "ELSE"
 	RETURN   = "RETURN"
 
-	//Airthmatic
-
+	//Comparision
+	EQ     = "=="
+	NOT_EQ = "!="
 )
 
 var keywords = map[string]TokenType{
