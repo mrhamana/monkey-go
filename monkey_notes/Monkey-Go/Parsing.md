@@ -9,6 +9,5 @@ Some details regarding this parser is mentioned below.
 4) We'll be implementing Recursive Descent Parser
 
 ### The infamous Let
-The let statement in out code looks like this . "let <IDENTIFIER>=<EXPRESSION>"Before we move on , there's an important difference between statements and expressions. Expressions outputs something . For example, 2+3 returns 5 so it's an expression. Whereas statements don't . Using let doesn't return anything thus it's a statement. Again , to make it clear ,
+The let statement in out code looks like this . "let <IDENTIFIER>=<EXPRESSION>"Before we move on , there's an important difference between statements and expressions. Expressions outputs something . For example, 2+3 returns 5 so it's an expression. Whereas statements don't . Using let doesn't return anything thus it's a statement. Again , to make it clear , **Statements don't return values whereas expressions do**. 
 
- **Statements don't return values whereas expressions do**. 
