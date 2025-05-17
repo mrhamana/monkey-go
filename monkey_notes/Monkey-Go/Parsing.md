@@ -11,6 +11,15 @@ Some details regarding this parser is mentioned below.
 ### The Infamous Let
 The let statement in out code looks like this . "let **IDENTIFIER** = **EXPRESSION** "Before we move on , there's an important difference between statements and expressions. Expressions outputs something . For example, 2+3 returns 5 so it's an expression. Whereas statements don't . Using let doesn't return anything thus it's a statement. Again , to make it clear , __Statements don't return values whereas expressions do__.
 
+## A Short Note for Interfaces in Golang
+
+This took me soo long to understand just because it's not a common functionality and I am not familiar with the concept. An interface is a group of methods which is grouped to perform a specific task and they work together to achieve a certain goal. For example , i want to build a car . Then i make an interface **BuildCar** and inside that I'll add methods like __putwheel__ , __addengine__ , __assemblecar__ ,etc. All we're doing is grouping like method signature inside the interface .This helps to make the code modular and easy to write . Rather than write every functions differently , make an interface which groups like methods. Golang takes this as a datatype soo if i want to add an interface , i can just do 
+
+`func buildMeACar(maker MakeCar) {`
+`maker.makeEngine() 
+`maker.putTire()
+`maker.assembleCar()}`
+
 
 
 
