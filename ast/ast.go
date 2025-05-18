@@ -22,7 +22,7 @@ type Identifier struct {
 }
 
 func (i *Identifier) expressionNode() {}
-func (i *Identifier) TokenLiteral() {
+func (i *Identifier) TokenLiteral() string {
 	return i.Token.Literal
 }
 
