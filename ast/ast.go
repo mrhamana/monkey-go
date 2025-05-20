@@ -4,6 +4,9 @@ import (
 	"monkey/token"
 )
 
+// The Things it needs are the Token Type which is the TOKEN.LET
+// Second is the name of the Identifier type
+// Third is the Expression. Ths is given to be evaluated to the evaluator which returns the value of the expression
 type LetStatement struct {
 	Token token.Token
 	Name  *Identifier
