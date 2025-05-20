@@ -4,7 +4,7 @@ import (
 	"monkey/token"
 )
 
-// The Things it needs are the Token Type which is the TOKEN.LET
+// Token Type which is the TOKEN.LET
 // Second is the name of the Identifier type
 // Third is the Expression. Ths is given to be evaluated to the evaluator which returns the value of the expression
 type LetStatement struct {
@@ -19,6 +19,8 @@ func (ls *LetStatement) TokenLiteral() string {
 	return ls.Token.Literal
 }
 
+// Token type
+// Value contains the string literal of that identifier
 type Identifier struct {
 	Token token.Token
 	Value string
