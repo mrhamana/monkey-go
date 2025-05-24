@@ -30,6 +30,8 @@ func (p *Program) TokenLiteral() string {
 	}
 }
 
+func (ls *LetStatement) statementNode() {}
+
 // Token Type which is the TOKEN.LET
 // Second is the name of the Identifier type
 // Third is the Expression. Ths is given to be evaluated to the evaluator which returns the value of the expression
