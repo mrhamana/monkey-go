@@ -1,9 +1,9 @@
 package parser
 
 import (
-	"go/token"
 	"monkey/ast"
 	"monkey/lexer"
+	"monkey/token"
 )
 
 type Parser struct {
