@@ -1,7 +1,7 @@
 package parser
 
 import (
-	"go/ast"
+	"monkey/ast"
 	"monkey/lexer"
 	"testing"
 )

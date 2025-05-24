@@ -50,3 +50,11 @@ Identifier requires two fields . They are,
 ![[../Images/AST.png]]
 
 
+## The Parser
+
+The parser structure has three attributes. They are :
+1) l
+2) curToken
+3) peekToken
+
+"l" is the instance of the lexer . This is useful so that when calling nextToken , we get next token of the input. The "curToken" and "peekToken" is the same concept as position and peekPosition like two pointers . The difference being this stores token values rather than characters.
